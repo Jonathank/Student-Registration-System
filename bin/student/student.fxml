@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.StudentController">
+   <children>
+      <Pane layoutX="17.0" layoutY="74.0" prefHeight="305.0" prefWidth="439.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="28.0" layoutY="41.0" text="STUDENT ID" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="99.0" text="FIRST NAME" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="153.0" text="LAST NAME" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="200.0" text="GENDER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="247.0" text="AGE" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtid" layoutX="189.0" layoutY="38.0" prefHeight="25.0" prefWidth="223.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtfname" layoutX="189.0" layoutY="95.0" prefHeight="25.0" prefWidth="223.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtlname" layoutX="189.0" layoutY="150.0" prefHeight="25.0" prefWidth="223.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtage" layoutX="189.0" layoutY="244.0" prefHeight="25.0" prefWidth="223.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="combogender" layoutX="189.0" layoutY="198.0" prefHeight="25.0" prefWidth="223.0" />
+         </children>
+      </Pane>
+      <Button fx:id="btnsave" layoutX="17.0" layoutY="390.0" mnemonicParsing="false" onAction="#save" style="-fx-background-color: orange;" text="SAVE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnupdate" layoutX="410.0" layoutY="390.0" mnemonicParsing="false" onAction="#updatebutton" style="-fx-background-color: orange;" text="UPDATE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btndelete" layoutX="602.0" layoutY="390.0" mnemonicParsing="false" onAction="#Delete" style="-fx-background-color: orange;" text="DELETE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutY="6.0" prefHeight="56.0" prefWidth="789.0" text="STUDENT REGISTRATION" textFill="RED">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="34.0" />
+         </font>
+      </Label>
+      <TableView fx:id="studenttable" layoutX="460.0" layoutY="75.0" prefHeight="305.0" prefWidth="439.0">
+        <columns>
+          <TableColumn fx:id="CID" prefWidth="87.0" text="STUDENT ID" />
+          <TableColumn fx:id="CFN" prefWidth="116.0" text="FIRSTNAME" />
+            <TableColumn fx:id="CLN" prefWidth="118.0" text="LASTNAME" />
+            <TableColumn fx:id="CG" prefWidth="67.0" text="GENGER" />
+            <TableColumn fx:id="CAGE" prefWidth="50.0" text="AGE" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnexit" layoutX="803.0" layoutY="390.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: orange;" text="EXIT">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnclear" layoutX="213.0" layoutY="390.0" mnemonicParsing="false" onAction="#clear" style="-fx-background-color: orange;" text="CLEAR">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
